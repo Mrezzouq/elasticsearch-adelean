@@ -15,9 +15,6 @@ import java.util.zip.ZipFile;
 public class UnzipUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(UnzipUtils.class);
 
-    private UnzipUtils() {
-    }
-
     public String unzip(String zipFilePath, String outputDirectory) throws IOException {
         var destDir = createOutputDirectory(outputDirectory);
         try (var zipFile = new ZipFile(zipFilePath)) {
