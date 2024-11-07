@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:7.4.1'
+    implementation 'org.slf4j:slf4j-api:2.1.0-alpha1'
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
